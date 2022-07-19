@@ -28,7 +28,7 @@
 	    		@include('includes.messages')      
 	          <!-- /.box-header -->
 	          <!-- form start -->
-	          <form role="form" action="{{ route('category.update',$category->id) }}" method="post">
+	          <form role="form" action="{{ route('category.update',$category->id) }}" method="post" enctype="multipart/form-data">
 	          {{ csrf_field() }}
 	          {{ method_field('PUT') }}
 	            <div class="box-body">
